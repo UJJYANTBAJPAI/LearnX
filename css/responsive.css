@@ -1,0 +1,22 @@
+@media (max-width:1024px){
+ .app{grid-template-columns:76px 1fr}
+ .nav-link span,.sidebar .logo span{display:none}
+ .cols{grid-template-columns:1fr}
+ .steps{grid-template-columns:repeat(2,1fr)}
+ .step:nth-child(2n)::after{display:none}
+}
+@media (max-width:760px){
+ .hero .container{grid-template-columns:1fr}
+ .nav-links{display:none}
+ .app,.app.collapsed{grid-template-columns:1fr}
+ .sidebar{position:fixed;z-index:60;width:250px;transform:translateX(-100%)}
+ .sidebar.open{transform:none}
+ .sidebar .nav-link span,.sidebar .logo span{display:inline}
+ .main{padding:18px 16px 40px}
+ .search{display:none}
+ .steps{grid-template-columns:1fr}
+ .step::after{display:none}
+ .bubble{max-width:90%}
+}
+@media (min-width:761px){#menuBtn{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

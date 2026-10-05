@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><title>Login | LearnX</title><script src="js/main.js"></script><script src="js/auth.js"></script></head>
+<body><main class="auth"><section class="card auth-card">
+ <a class="logo" href="index.html"><b>L</b>LearnX</a><h1>Welcome back</h1><p class="muted">Log in to continue learning. Any valid email works for the demo.</p>
+ <form id="authForm" data-mode="login" novalidate>
+  <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" autocomplete="email"><p class="msg"></p></div>
+  <div class="field"><label for="password">Password</label><div class="pw"><input class="input" id="password" name="password" type="password" autocomplete="current-password"><button type="button">Show</button></div><p class="msg"></p></div>
+  <div class="split"><label><input type="checkbox" name="remember"> Remember me</label><a class="center" style="margin:0" href="#">Forgot Password?</a></div>
+  <button class="btn btn-primary" type="submit">Login</button>
+ </form>
+ <p class="center">New to LearnX? <a href="register.html">Create Account</a></p>
+</section></main></body></html>
